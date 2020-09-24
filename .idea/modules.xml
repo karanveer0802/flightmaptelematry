@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="mapbox-events-android/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libcore/libcore.iml" filepath="$PROJECT_DIR$/.idea/modules/libcore/libcore.iml" group="mapbox-events-android/libcore" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/liblocation/liblocation.iml" filepath="$PROJECT_DIR$/.idea/modules/liblocation/liblocation.iml" group="mapbox-events-android/liblocation" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libtelemetry/libtelemetry.iml" filepath="$PROJECT_DIR$/.idea/modules/libtelemetry/libtelemetry.iml" group="mapbox-events-android/libtelemetry" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/mapbox-events-android.iml" filepath="$PROJECT_DIR$/.idea/modules/mapbox-events-android.iml" group="mapbox-events-android" />
+    </modules>
+  </component>
+</project>

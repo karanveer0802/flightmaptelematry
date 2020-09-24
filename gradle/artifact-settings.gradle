@@ -1,0 +1,22 @@
+ext {
+    mapboxArtifactGroupId = 'flightmapnavigationsdk'
+    mapboxArtifactId = project.property('POM_ARTIFACT_ID')
+    mapboxArtifactTitle = project.property('POM_ARTIFACT_TITLE')
+    mapboxArtifactDescription = project.property('POM_DESCRIPTION')
+    mapboxDeveloperName = 'karanveerjungleworks'
+    mapboxDeveloperId = 'karanveerjungleworks'
+    mapboxArtifactUrl = 'https://github.com/mapbox/mapbox-navigation-android'
+    mapboxArtifactVcsUrl = 'https://github.com/mapbox/mapbox-navigation-android.git'
+    mapboxArtifactScmUrl = 'scm:git@github.com:mapbox/mapbox-navigation-android.git'
+    mapboxArtifactLicenseName = 'BSD'
+    mapboxArtifactLicenseUrl = 'https://github.com/karanveer0802/flightmap.git'
+    versionName = '1.7.0'
+
+    mapboxBintrayUserOrg = 'flightmap'
+    mapboxBintrayRepoName = 'flightmapnavigationsdk'
+//    mapboxBintrayUser = project.hasProperty('BINTRAY_USER') ? project.property('BINTRAY_USER') : System.getenv('BINTRAY_USER')
+    mapboxBintrayUser = 'karanveerjungleworks'
+//    mapboxBintrayApiKey = project.hasProperty('BINTRAY_API_KEY') ? project.property('BINTRAY_API_KEY') : System.getenv('BINTRAY_API_KEY')
+    mapboxBintrayApiKey = 'ab86e1d6dc3c33486736f74bbd23e2e35daad8d8'
+    mapboxGpgPassphrase = project.hasProperty('GPG_PASSPHRASE') ? project.property('GPG_PASSPHRASE') : System.getenv('GPG_PASSPHRASE')
+}

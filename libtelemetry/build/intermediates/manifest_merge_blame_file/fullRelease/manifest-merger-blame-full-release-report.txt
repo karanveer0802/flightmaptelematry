@@ -1,0 +1,35 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.mapbox.android.telemetry"
+4    android:versionCode="1"
+5    android:versionName="4.7.3-SNAPSHOT" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="14"
+9        android:targetSdkVersion="28" />
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->E:\mapbox-events-android\libtelemetry\src\main\AndroidManifest.xml:6:5-78
+11-->E:\mapbox-events-android\libtelemetry\src\main\AndroidManifest.xml:6:22-76
+12    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+12-->E:\mapbox-events-android\libtelemetry\src\main\AndroidManifest.xml:7:5-75
+12-->E:\mapbox-events-android\libtelemetry\src\main\AndroidManifest.xml:7:22-73
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->E:\mapbox-events-android\libtelemetry\src\main\AndroidManifest.xml:8:5-66
+13-->E:\mapbox-events-android\libtelemetry\src\main\AndroidManifest.xml:8:22-64
+14
+15    <application>
+15-->E:\mapbox-events-android\libtelemetry\src\full\AndroidManifest.xml:9:5-15:19
+16        <provider
+16-->E:\mapbox-events-android\libtelemetry\src\full\AndroidManifest.xml:10:9-14:38
+17            android:name="com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider"
+17-->E:\mapbox-events-android\libtelemetry\src\full\AndroidManifest.xml:11:13-65
+18            android:authorities="dollar_openBracket_applicationId_closeBracket.mapboxtelemetryinitprovider"
+18-->E:\mapbox-events-android\libtelemetry\src\full\AndroidManifest.xml:12:13-79
+19            android:exported="false"
+19-->E:\mapbox-events-android\libtelemetry\src\full\AndroidManifest.xml:13:13-37
+20            android:initOrder="100" />
+20-->E:\mapbox-events-android\libtelemetry\src\full\AndroidManifest.xml:14:13-36
+21    </application>
+22
+23</manifest>

@@ -1,0 +1,219 @@
+/*
+ * Copyright 2013 Chris Banes
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+def isReleaseBuild() {
+    return VERSION_NAME.contains("SNAPSHOT") == false
+}
+
+def static isLocalBuild() {
+    if (System.getenv('IS_LOCAL_DEVELOPMENT') != null) {
+        return System.getenv('IS_LOCAL_DEVELOPMENT').toBoolean()
+    }
+    return true
+}
+
+def getReleaseRepositoryUrl() {
+    return hasProperty('RELEASE_REPOSITORY_URL') ? RELEASE_REPOSITORY_URL
+            : "https://oss.sonatype.org/service/local/staging/deploy/maven2/"
+}
+
+def getSnapshotRepositoryUrl() {
+    return hasProperty('SNAPSHOT_REPOSITORY_URL') ? SNAPSHOT_REPOSITORY_URL
+            : "https://oss.sonatype.org/content/repositories/snapshots/"
+}
+
+def obtainMavenLocalUrl() {
+    return getRepositories().mavenLocal().getUrl()
+}
+
+def getRepositoryUsername() {
+    return hasProperty('NEXUS_USERNAME') ? NEXUS_USERNAME : ""
+}
+
+def getRepositoryPassword() {
+    return hasProperty('NEXUS_PASSWORD') ? NEXUS_PASSWORD : ""
+}
+
+def static isLiteRelease() {
+    if (System.getenv('IS_LITE_RELEASE') != null) {
+        return System.getenv('IS_LITE_RELEASE').toBoolean()
+    }
+    return false
+}
+
+def isTelem() {
+    return project.toString() == "project ':libtelemetry'"
+}
+
+afterEvaluate { project ->
+    uploadArchives {
+        repositories {
+            mavenDeployer {
+                beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+                if (isLiteRelease()) {
+                    POM_ARTIFACT_ID = POM_ARTIFACT_ID + "-lite"
+                }
+
+                pom.groupId = GROUP
+                pom.artifactId = POM_ARTIFACT_ID
+                pom.version = VERSION_NAME
+
+                if (isLocalBuild()) {
+                    repository(url: obtainMavenLocalUrl())
+                } else {
+                    repository(url: getReleaseRepositoryUrl()) {
+                        authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+                    }
+                    snapshotRepository(url: getSnapshotRepositoryUrl()) {
+                        authentication(userName: getRepositoryUsername(), password: getRepositoryPassword())
+                    }
+                }
+
+                pom.project {
+                    name POM_NAME
+                    packaging POM_PACKAGING
+                    description POM_DESCRIPTION
+                    url POM_URL
+
+                    scm {
+                        url POM_SCM_URL
+                        connection POM_SCM_CONNECTION
+                        developerConnection POM_SCM_DEV_CONNECTION
+                    }
+
+                    licenses {
+                        license {
+                            name POM_LICENCE_NAME
+                            url POM_LICENCE_URL
+                            distribution POM_LICENCE_DIST
+                        }
+                    }
+
+                    developers {
+                        developer {
+                            id POM_DEVELOPER_ID
+                            name POM_DEVELOPER_NAME
+                        }
+                    }
+
+                    // Hacking with telem pom due to bug in gradle uploadArchives task
+                    if (isTelem()) {
+                        def allDependencies = configurations.implementation.allDependencies
+                        if (!isLiteRelease()) {
+                            allDependencies += configurations.fullImplementation.allDependencies
+                        }
+
+                        dependencies {
+                            for (def dep: allDependencies) {
+                                if (dep == null) {
+                                    continue
+                                }
+
+                                dependency {
+                                    groupId dep.group
+                                    // Since name is readonly property we can't override it
+                                    artifactId (dep.name == 'libcore' ? 'mapbox-android-core' : dep.name)
+                                    version dep.version
+                                    scope "compile"
+
+                                    if (!dep.excludeRules.isEmpty()) {
+                                        exclusions {
+                                            for (def exc: dep.excludeRules) {
+                                                if (exc == null) {
+                                                    continue
+                                                }
+
+                                                exclusion {
+                                                    artifactId exc.module
+                                                    groupId exc.group
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    signing {
+        required { isReleaseBuild() && gradle.taskGraph.hasTask("uploadArchives") }
+        sign configurations.archives
+    }
+
+    task androidJavadocs(type: Javadoc) {
+        def sources = android.sourceSets.main.collect {
+            it.javaDirectories
+        }
+        if (isTelem()) {
+            sources += isLiteRelease() ? android.sourceSets.lite.collect {
+                it.javaDirectories
+            } : android.sourceSets.full.collect {
+                it.javaDirectories
+            }
+        }
+        source = sources
+        classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    }
+
+    task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+        classifier = 'javadoc'
+        from androidJavadocs.destinationDir
+    }
+
+    task androidSourcesJar(type: Jar) {
+        classifier = 'sources'
+        def sources = android.sourceSets.main.collect {
+            it.javaDirectories
+        }
+
+        if (isTelem()) {
+            sources += isLiteRelease() ? android.sourceSets.lite.collect {
+                it.javaDirectories
+            } : android.sourceSets.full.collect {
+                it.javaDirectories
+            }
+        }
+        from sources
+    }
+
+    artifacts {
+        // Hacking with telem artifacts due to bug in gradle uploadArchives task
+        if (isTelem()) {
+            def artifactsDir = "${project.buildDir}/outputs/aar/"
+            archives file: new File(isLiteRelease() ? "${artifactsDir}/libtelemetry-lite-release.aar" :
+                    "${artifactsDir}/libtelemetry-full-release.aar")
+        }
+        archives androidSourcesJar
+        archives androidJavadocsJar
+    }
+}
+
+// See: https://github.com/chrisbanes/gradle-mvn-push/issues/43#issuecomment-84140513
+afterEvaluate { project ->
+    android.libraryVariants.all { variant ->
+        tasks.androidJavadocs.doFirst {
+            classpath += files(variant.javaCompile.classpath.files)
+        }
+    }
+}

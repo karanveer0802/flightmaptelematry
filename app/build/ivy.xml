@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="com.mapbox.mapboxsdk" module="app" revision="unspecified" status="integration" publication="20200925002356"/>
+  <configurations>
+    <conf name="androidApis" visibility="public"/>
+    <conf name="androidTestAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestApi" visibility="private" extends="androidTestCompile"/>
+    <conf name="androidTestApk" visibility="private"/>
+    <conf name="androidTestCompile" visibility="private"/>
+    <conf name="androidTestCompileOnly" visibility="private" extends="androidTestProvided"/>
+    <conf name="androidTestDebugAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestDebugApi" visibility="private" extends="androidTestDebugCompile"/>
+    <conf name="androidTestDebugApk" visibility="private"/>
+    <conf name="androidTestDebugCompile" visibility="private"/>
+    <conf name="androidTestDebugCompileOnly" visibility="private" extends="androidTestDebugProvided"/>
+    <conf name="androidTestDebugImplementation" visibility="private" extends="androidTestDebugApi"/>
+    <conf name="androidTestDebugProvided" visibility="private"/>
+    <conf name="androidTestDebugRuntimeOnly" visibility="private" extends="androidTestDebugApk"/>
+    <conf name="androidTestDebugWearApp" visibility="private"/>
+    <conf name="androidTestFullAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestFullApi" visibility="private" extends="androidTestFullCompile"/>
+    <conf name="androidTestFullApk" visibility="private"/>
+    <conf name="androidTestFullCompile" visibility="private"/>
+    <conf name="androidTestFullCompileOnly" visibility="private" extends="androidTestFullProvided"/>
+    <conf name="androidTestFullDebugAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestFullDebugApi" visibility="private" extends="androidTestFullDebugCompile"/>
+    <conf name="androidTestFullDebugApk" visibility="private"/>
+    <conf name="androidTestFullDebugCompile" visibility="private"/>
+    <conf name="androidTestFullDebugCompileOnly" visibility="private" extends="androidTestFullDebugProvided"/>
+    <conf name="androidTestFullDebugImplementation" visibility="private" extends="androidTestFullDebugApi"/>
+    <conf name="androidTestFullDebugProvided" visibility="private"/>
+    <conf name="androidTestFullDebugRuntimeOnly" visibility="private" extends="androidTestFullDebugApk"/>
+    <conf name="androidTestFullDebugWearApp" visibility="private"/>
+    <conf name="androidTestFullImplementation" visibility="private" extends="androidTestFullApi"/>
+    <conf name="androidTestFullProvided" visibility="private"/>
+    <conf name="androidTestFullRuntimeOnly" visibility="private" extends="androidTestFullApk"/>
+    <conf name="androidTestFullWearApp" visibility="private"/>
+    <conf name="androidTestImplementation" visibility="private" extends="androidTestApi"/>
+    <conf name="androidTestLiteAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestLiteApi" visibility="private" extends="androidTestLiteCompile"/>
+    <conf name="androidTestLiteApk" visibility="private"/>
+    <conf name="androidTestLiteCompile" visibility="private"/>
+    <conf name="androidTestLiteCompileOnly" visibility="private" extends="androidTestLiteProvided"/>
+    <conf name="androidTestLiteDebugAnnotationProcessor" visibility="private"/>
+    <conf name="androidTestLiteDebugApi" visibility="private" extends="androidTestLiteDebugCompile"/>
+    <conf name="androidTestLiteDebugApk" visibility="private"/>
+    <conf name="androidTestLiteDebugCompile" visibility="private"/>
+    <conf name="androidTestLiteDebugCompileOnly" visibility="private" extends="androidTestLiteDebugProvided"/>
+    <conf name="androidTestLiteDebugImplementation" visibility="private" extends="androidTestLiteDebugApi"/>
+    <conf name="androidTestLiteDebugProvided" visibility="private"/>
+    <conf name="androidTestLiteDebugRuntimeOnly" visibility="private" extends="androidTestLiteDebugApk"/>
+    <conf name="androidTestLiteDebugWearApp" visibility="private"/>
+    <conf name="androidTestLiteImplementation" visibility="private" extends="androidTestLiteApi"/>
+    <conf name="androidTestLiteProvided" visibility="private"/>
+    <conf name="androidTestLiteRuntimeOnly" visibility="private" extends="androidTestLiteApk"/>
+    <conf name="androidTestLiteWearApp" visibility="private"/>
+    <conf name="androidTestProvided" visibility="private"/>
+    <conf name="androidTestRuntimeOnly" visibility="private" extends="androidTestApk"/>
+    <conf name="androidTestUtil" visibility="private"/>
+    <conf name="androidTestWearApp" visibility="private"/>
+    <conf name="annotationProcessor" visibility="private"/>
+    <conf name="api" visibility="private" extends="compile"/>
+    <conf name="apk" visibility="private"/>
+    <conf name="archives" visibility="public"/>
+    <conf name="checkstyle" visibility="private"/>
+    <conf name="compile" visibility="private"/>
+    <conf name="compileOnly" visibility="private" extends="provided"/>
+    <conf name="debugAnnotationProcessor" visibility="private"/>
+    <conf name="debugApi" visibility="private" extends="debugCompile"/>
+    <conf name="debugApk" visibility="private"/>
+    <conf name="debugCompile" visibility="private"/>
+    <conf name="debugCompileOnly" visibility="private" extends="debugProvided"/>
+    <conf name="debugImplementation" visibility="private" extends="debugApi"/>
+    <conf name="debugProvided" visibility="private"/>
+    <conf name="debugRuntimeOnly" visibility="private" extends="debugApk"/>
+    <conf name="debugWearApp" visibility="private"/>
+    <conf name="default" visibility="public"/>
+    <conf name="fullAnnotationProcessor" visibility="private"/>
+    <conf name="fullApi" visibility="private" extends="fullCompile"/>
+    <conf name="fullApk" visibility="private"/>
+    <conf name="fullCompile" visibility="private"/>
+    <conf name="fullCompileOnly" visibility="private" extends="fullProvided"/>
+    <conf name="fullDebugAndroidTestAnnotationProcessorClasspath" visibility="private" extends="androidTestAnnotationProcessor,androidTestDebugAnnotationProcessor,androidTestFullAnnotationProcessor,androidTestFullDebugAnnotationProcessor"/>
+    <conf name="fullDebugAndroidTestCompileClasspath" visibility="private" extends="androidTestCompileOnly,androidTestDebugCompileOnly,androidTestDebugImplementation,androidTestFullCompileOnly,androidTestFullDebugCompileOnly,androidTestFullDebugImplementation,androidTestFullImplementation,androidTestImplementation,debugImplementation,fullDebugImplementation,fullImplementation,implementation"/>
+    <conf name="fullDebugAndroidTestRuntimeClasspath" visibility="private" extends="androidTestDebugImplementation,androidTestDebugRuntimeOnly,androidTestFullDebugImplementation,androidTestFullDebugRuntimeOnly,androidTestFullImplementation,androidTestFullRuntimeOnly,androidTestImplementation,androidTestRuntimeOnly,debugImplementation,debugRuntimeOnly,fullDebugImplementation,fullDebugRuntimeOnly,fullImplementation,fullRuntimeOnly,implementation,runtimeOnly"/>
+    <conf name="fullDebugAnnotationProcessor" visibility="private"/>
+    <conf name="fullDebugAnnotationProcessorClasspath" visibility="private" extends="annotationProcessor,debugAnnotationProcessor,fullAnnotationProcessor,fullDebugAnnotationProcessor"/>
+    <conf name="fullDebugApi" visibility="private" extends="fullDebugCompile"/>
+    <conf name="fullDebugApiElements" visibility="public" extends="api,debugApi,fullApi,fullDebugApi"/>
+    <conf name="fullDebugApk" visibility="private"/>
+    <conf name="fullDebugBundleElements" visibility="public"/>
+    <conf name="fullDebugCompile" visibility="private"/>
+    <conf name="fullDebugCompileClasspath" visibility="private" extends="compileOnly,debugCompileOnly,debugImplementation,fullCompileOnly,fullDebugCompileOnly,fullDebugImplementation,fullImplementation,implementation"/>
+    <conf name="fullDebugCompileOnly" visibility="private" extends="fullDebugProvided"/>
+    <conf name="fullDebugImplementation" visibility="private" extends="fullDebugApi"/>
+    <conf name="fullDebugMetadataElements" visibility="public"/>
+    <conf name="fullDebugMetadataValues" visibility="public"/>
+    <conf name="fullDebugProvided" visibility="private"/>
+    <conf name="fullDebugRuntimeClasspath" visibility="private" extends="debugImplementation,debugRuntimeOnly,fullDebugImplementation,fullDebugRuntimeOnly,fullImplementation,fullRuntimeOnly,implementation,runtimeOnly"/>
+    <conf name="fullDebugRuntimeElements" visibility="public"/>
+    <conf name="fullDebugRuntimeOnly" visibility="private" extends="fullDebugApk"/>
+    <conf name="fullDebugUnitTestAnnotationProcessorClasspath" visibility="private" extends="testAnnotationProcessor,testDebugAnnotationProcessor,testFullAnnotationProcessor,testFullDebugAnnotationProcessor"/>
+    <conf name="fullDebugUnitTestCompileClasspath" visibility="private" extends="debugImplementation,fullDebugImplementation,fullImplementation,implementation,testCompileOnly,testDebugCompileOnly,testDebugImplementation,testFullCompileOnly,testFullDebugCompileOnly,testFullDebugImplementation,testFullImplementation,testImplementation"/>
+    <conf name="fullDebugUnitTestRuntimeClasspath" visibility="private" extends="debugImplementation,debugRuntimeOnly,fullDebugImplementation,fullDebugRuntimeOnly,fullImplementation,fullRuntimeOnly,implementation,runtimeOnly,testDebugImplementation,testDebugRuntimeOnly,testFullDebugImplementation,testFullDebugRuntimeOnly,testFullImplementation,testFullRuntimeOnly,testImplementation,testRuntimeOnly"/>
+    <conf name="fullDebugWearApp" visibility="private"/>
+    <conf name="fullDebugWearBundling" visibility="public" extends="debugWearApp,fullDebugWearApp,fullWearApp,wearApp"/>
+    <conf name="fullImplementation" visibility="private" extends="fullApi"/>
+    <conf name="fullProvided" visibility="private"/>
+    <conf name="fullReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="fullReleaseAnnotationProcessorClasspath" visibility="private" extends="annotationProcessor,fullAnnotationProcessor,fullReleaseAnnotationProcessor,releaseAnnotationProcessor"/>
+    <conf name="fullReleaseApi" visibility="private" extends="fullReleaseCompile"/>
+    <conf name="fullReleaseApiElements" visibility="public" extends="api,fullApi,fullReleaseApi,releaseApi"/>
+    <conf name="fullReleaseApk" visibility="private"/>
+    <conf name="fullReleaseBundleElements" visibility="public"/>
+    <conf name="fullReleaseCompile" visibility="private"/>
+    <conf name="fullReleaseCompileClasspath" visibility="private" extends="compileOnly,fullCompileOnly,fullImplementation,fullReleaseCompileOnly,fullReleaseImplementation,implementation,releaseCompileOnly,releaseImplementation"/>
+    <conf name="fullReleaseCompileOnly" visibility="private" extends="fullReleaseProvided"/>
+    <conf name="fullReleaseImplementation" visibility="private" extends="fullReleaseApi"/>
+    <conf name="fullReleaseMetadataElements" visibility="public"/>
+    <conf name="fullReleaseMetadataValues" visibility="public"/>
+    <conf name="fullReleaseProvided" visibility="private"/>
+    <conf name="fullReleaseRuntimeClasspath" visibility="private" extends="fullImplementation,fullReleaseImplementation,fullReleaseRuntimeOnly,fullRuntimeOnly,implementation,releaseImplementation,releaseRuntimeOnly,runtimeOnly"/>
+    <conf name="fullReleaseRuntimeElements" visibility="public"/>
+    <conf name="fullReleaseRuntimeOnly" visibility="private" extends="fullReleaseApk"/>
+    <conf name="fullReleaseUnitTestAnnotationProcessorClasspath" visibility="private" extends="testAnnotationProcessor,testFullAnnotationProcessor,testFullReleaseAnnotationProcessor,testReleaseAnnotationProcessor"/>
+    <conf name="fullReleaseUnitTestCompileClasspath" visibility="private" extends="fullImplementation,fullReleaseImplementation,implementation,releaseImplementation,testCompileOnly,testFullCompileOnly,testFullImplementation,testFullReleaseCompileOnly,testFullReleaseImplementation,testImplementation,testReleaseCompileOnly,testReleaseImplementation"/>
+    <conf name="fullReleaseUnitTestRuntimeClasspath" visibility="private" extends="fullImplementation,fullReleaseImplementation,fullReleaseRuntimeOnly,fullRuntimeOnly,implementation,releaseImplementation,releaseRuntimeOnly,runtimeOnly,testFullImplementation,testFullReleaseImplementation,testFullReleaseRuntimeOnly,testFullRuntimeOnly,testImplementation,testReleaseImplementation,testReleaseRuntimeOnly,testRuntimeOnly"/>
+    <conf name="fullReleaseWearApp" visibility="private"/>
+    <conf name="fullReleaseWearBundling" visibility="public" extends="fullReleaseWearApp,fullWearApp,releaseWearApp,wearApp"/>
+    <conf name="fullRuntimeOnly" visibility="private" extends="fullApk"/>
+    <conf name="fullWearApp" visibility="private"/>
+    <conf name="implementation" visibility="private" extends="api"/>
+    <conf name="lintChecks" visibility="private"/>
+    <conf name="lintClassPath" visibility="private"/>
+    <conf name="lintPublish" visibility="private"/>
+    <conf name="liteAnnotationProcessor" visibility="private"/>
+    <conf name="liteApi" visibility="private" extends="liteCompile"/>
+    <conf name="liteApk" visibility="private"/>
+    <conf name="liteCompile" visibility="private"/>
+    <conf name="liteCompileOnly" visibility="private" extends="liteProvided"/>
+    <conf name="liteDebugAndroidTestAnnotationProcessorClasspath" visibility="private" extends="androidTestAnnotationProcessor,androidTestDebugAnnotationProcessor,androidTestLiteAnnotationProcessor,androidTestLiteDebugAnnotationProcessor"/>
+    <conf name="liteDebugAndroidTestCompileClasspath" visibility="private" extends="androidTestCompileOnly,androidTestDebugCompileOnly,androidTestDebugImplementation,androidTestImplementation,androidTestLiteCompileOnly,androidTestLiteDebugCompileOnly,androidTestLiteDebugImplementation,androidTestLiteImplementation,debugImplementation,implementation,liteDebugImplementation,liteImplementation"/>
+    <conf name="liteDebugAndroidTestRuntimeClasspath" visibility="private" extends="androidTestDebugImplementation,androidTestDebugRuntimeOnly,androidTestImplementation,androidTestLiteDebugImplementation,androidTestLiteDebugRuntimeOnly,androidTestLiteImplementation,androidTestLiteRuntimeOnly,androidTestRuntimeOnly,debugImplementation,debugRuntimeOnly,implementation,liteDebugImplementation,liteDebugRuntimeOnly,liteImplementation,liteRuntimeOnly,runtimeOnly"/>
+    <conf name="liteDebugAnnotationProcessor" visibility="private"/>
+    <conf name="liteDebugAnnotationProcessorClasspath" visibility="private" extends="annotationProcessor,debugAnnotationProcessor,liteAnnotationProcessor,liteDebugAnnotationProcessor"/>
+    <conf name="liteDebugApi" visibility="private" extends="liteDebugCompile"/>
+    <conf name="liteDebugApiElements" visibility="public" extends="api,debugApi,liteApi,liteDebugApi"/>
+    <conf name="liteDebugApk" visibility="private"/>
+    <conf name="liteDebugBundleElements" visibility="public"/>
+    <conf name="liteDebugCompile" visibility="private"/>
+    <conf name="liteDebugCompileClasspath" visibility="private" extends="compileOnly,debugCompileOnly,debugImplementation,implementation,liteCompileOnly,liteDebugCompileOnly,liteDebugImplementation,liteImplementation"/>
+    <conf name="liteDebugCompileOnly" visibility="private" extends="liteDebugProvided"/>
+    <conf name="liteDebugImplementation" visibility="private" extends="liteDebugApi"/>
+    <conf name="liteDebugMetadataElements" visibility="public"/>
+    <conf name="liteDebugMetadataValues" visibility="public"/>
+    <conf name="liteDebugProvided" visibility="private"/>
+    <conf name="liteDebugRuntimeClasspath" visibility="private" extends="debugImplementation,debugRuntimeOnly,implementation,liteDebugImplementation,liteDebugRuntimeOnly,liteImplementation,liteRuntimeOnly,runtimeOnly"/>
+    <conf name="liteDebugRuntimeElements" visibility="public"/>
+    <conf name="liteDebugRuntimeOnly" visibility="private" extends="liteDebugApk"/>
+    <conf name="liteDebugUnitTestAnnotationProcessorClasspath" visibility="private" extends="testAnnotationProcessor,testDebugAnnotationProcessor,testLiteAnnotationProcessor,testLiteDebugAnnotationProcessor"/>
+    <conf name="liteDebugUnitTestCompileClasspath" visibility="private" extends="debugImplementation,implementation,liteDebugImplementation,liteImplementation,testCompileOnly,testDebugCompileOnly,testDebugImplementation,testImplementation,testLiteCompileOnly,testLiteDebugCompileOnly,testLiteDebugImplementation,testLiteImplementation"/>
+    <conf name="liteDebugUnitTestRuntimeClasspath" visibility="private" extends="debugImplementation,debugRuntimeOnly,implementation,liteDebugImplementation,liteDebugRuntimeOnly,liteImplementation,liteRuntimeOnly,runtimeOnly,testDebugImplementation,testDebugRuntimeOnly,testImplementation,testLiteDebugImplementation,testLiteDebugRuntimeOnly,testLiteImplementation,testLiteRuntimeOnly,testRuntimeOnly"/>
+    <conf name="liteDebugWearApp" visibility="private"/>
+    <conf name="liteDebugWearBundling" visibility="public" extends="debugWearApp,liteDebugWearApp,liteWearApp,wearApp"/>
+    <conf name="liteImplementation" visibility="private" extends="liteApi"/>
+    <conf name="liteProvided" visibility="private"/>
+    <conf name="liteReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="liteReleaseAnnotationProcessorClasspath" visibility="private" extends="annotationProcessor,liteAnnotationProcessor,liteReleaseAnnotationProcessor,releaseAnnotationProcessor"/>
+    <conf name="liteReleaseApi" visibility="private" extends="liteReleaseCompile"/>
+    <conf name="liteReleaseApiElements" visibility="public" extends="api,liteApi,liteReleaseApi,releaseApi"/>
+    <conf name="liteReleaseApk" visibility="private"/>
+    <conf name="liteReleaseBundleElements" visibility="public"/>
+    <conf name="liteReleaseCompile" visibility="private"/>
+    <conf name="liteReleaseCompileClasspath" visibility="private" extends="compileOnly,implementation,liteCompileOnly,liteImplementation,liteReleaseCompileOnly,liteReleaseImplementation,releaseCompileOnly,releaseImplementation"/>
+    <conf name="liteReleaseCompileOnly" visibility="private" extends="liteReleaseProvided"/>
+    <conf name="liteReleaseImplementation" visibility="private" extends="liteReleaseApi"/>
+    <conf name="liteReleaseMetadataElements" visibility="public"/>
+    <conf name="liteReleaseMetadataValues" visibility="public"/>
+    <conf name="liteReleaseProvided" visibility="private"/>
+    <conf name="liteReleaseRuntimeClasspath" visibility="private" extends="implementation,liteImplementation,liteReleaseImplementation,liteReleaseRuntimeOnly,liteRuntimeOnly,releaseImplementation,releaseRuntimeOnly,runtimeOnly"/>
+    <conf name="liteReleaseRuntimeElements" visibility="public"/>
+    <conf name="liteReleaseRuntimeOnly" visibility="private" extends="liteReleaseApk"/>
+    <conf name="liteReleaseUnitTestAnnotationProcessorClasspath" visibility="private" extends="testAnnotationProcessor,testLiteAnnotationProcessor,testLiteReleaseAnnotationProcessor,testReleaseAnnotationProcessor"/>
+    <conf name="liteReleaseUnitTestCompileClasspath" visibility="private" extends="implementation,liteImplementation,liteReleaseImplementation,releaseImplementation,testCompileOnly,testImplementation,testLiteCompileOnly,testLiteImplementation,testLiteReleaseCompileOnly,testLiteReleaseImplementation,testReleaseCompileOnly,testReleaseImplementation"/>
+    <conf name="liteReleaseUnitTestRuntimeClasspath" visibility="private" extends="implementation,liteImplementation,liteReleaseImplementation,liteReleaseRuntimeOnly,liteRuntimeOnly,releaseImplementation,releaseRuntimeOnly,runtimeOnly,testImplementation,testLiteImplementation,testLiteReleaseImplementation,testLiteReleaseRuntimeOnly,testLiteRuntimeOnly,testReleaseImplementation,testReleaseRuntimeOnly,testRuntimeOnly"/>
+    <conf name="liteReleaseWearApp" visibility="private"/>
+    <conf name="liteReleaseWearBundling" visibility="public" extends="liteReleaseWearApp,liteWearApp,releaseWearApp,wearApp"/>
+    <conf name="liteRuntimeOnly" visibility="private" extends="liteApk"/>
+    <conf name="liteWearApp" visibility="private"/>
+    <conf name="provided" visibility="private"/>
+    <conf name="releaseAnnotationProcessor" visibility="private"/>
+    <conf name="releaseApi" visibility="private" extends="releaseCompile"/>
+    <conf name="releaseApk" visibility="private"/>
+    <conf name="releaseCompile" visibility="private"/>
+    <conf name="releaseCompileOnly" visibility="private" extends="releaseProvided"/>
+    <conf name="releaseImplementation" visibility="private" extends="releaseApi"/>
+    <conf name="releaseProvided" visibility="private"/>
+    <conf name="releaseRuntimeOnly" visibility="private" extends="releaseApk"/>
+    <conf name="releaseWearApp" visibility="private"/>
+    <conf name="runtimeOnly" visibility="private" extends="apk"/>
+    <conf name="testAnnotationProcessor" visibility="private"/>
+    <conf name="testApi" visibility="private" extends="testCompile"/>
+    <conf name="testApk" visibility="private"/>
+    <conf name="testCompile" visibility="private"/>
+    <conf name="testCompileOnly" visibility="private" extends="testProvided"/>
+    <conf name="testDebugAnnotationProcessor" visibility="private"/>
+    <conf name="testDebugApi" visibility="private" extends="testDebugCompile"/>
+    <conf name="testDebugApk" visibility="private"/>
+    <conf name="testDebugCompile" visibility="private"/>
+    <conf name="testDebugCompileOnly" visibility="private" extends="testDebugProvided"/>
+    <conf name="testDebugImplementation" visibility="private" extends="testDebugApi"/>
+    <conf name="testDebugProvided" visibility="private"/>
+    <conf name="testDebugRuntimeOnly" visibility="private" extends="testDebugApk"/>
+    <conf name="testDebugWearApp" visibility="private"/>
+    <conf name="testFullAnnotationProcessor" visibility="private"/>
+    <conf name="testFullApi" visibility="private" extends="testFullCompile"/>
+    <conf name="testFullApk" visibility="private"/>
+    <conf name="testFullCompile" visibility="private"/>
+    <conf name="testFullCompileOnly" visibility="private" extends="testFullProvided"/>
+    <conf name="testFullDebugAnnotationProcessor" visibility="private"/>
+    <conf name="testFullDebugApi" visibility="private" extends="testFullDebugCompile"/>
+    <conf name="testFullDebugApk" visibility="private"/>
+    <conf name="testFullDebugCompile" visibility="private"/>
+    <conf name="testFullDebugCompileOnly" visibility="private" extends="testFullDebugProvided"/>
+    <conf name="testFullDebugImplementation" visibility="private" extends="testFullDebugApi"/>
+    <conf name="testFullDebugProvided" visibility="private"/>
+    <conf name="testFullDebugRuntimeOnly" visibility="private" extends="testFullDebugApk"/>
+    <conf name="testFullDebugWearApp" visibility="private"/>
+    <conf name="testFullImplementation" visibility="private" extends="testFullApi"/>
+    <conf name="testFullProvided" visibility="private"/>
+    <conf name="testFullReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="testFullReleaseApi" visibility="private" extends="testFullReleaseCompile"/>
+    <conf name="testFullReleaseApk" visibility="private"/>
+    <conf name="testFullReleaseCompile" visibility="private"/>
+    <conf name="testFullReleaseCompileOnly" visibility="private" extends="testFullReleaseProvided"/>
+    <conf name="testFullReleaseImplementation" visibility="private" extends="testFullReleaseApi"/>
+    <conf name="testFullReleaseProvided" visibility="private"/>
+    <conf name="testFullReleaseRuntimeOnly" visibility="private" extends="testFullReleaseApk"/>
+    <conf name="testFullReleaseWearApp" visibility="private"/>
+    <conf name="testFullRuntimeOnly" visibility="private" extends="testFullApk"/>
+    <conf name="testFullWearApp" visibility="private"/>
+    <conf name="testImplementation" visibility="private" extends="testApi"/>
+    <conf name="testLiteAnnotationProcessor" visibility="private"/>
+    <conf name="testLiteApi" visibility="private" extends="testLiteCompile"/>
+    <conf name="testLiteApk" visibility="private"/>
+    <conf name="testLiteCompile" visibility="private"/>
+    <conf name="testLiteCompileOnly" visibility="private" extends="testLiteProvided"/>
+    <conf name="testLiteDebugAnnotationProcessor" visibility="private"/>
+    <conf name="testLiteDebugApi" visibility="private" extends="testLiteDebugCompile"/>
+    <conf name="testLiteDebugApk" visibility="private"/>
+    <conf name="testLiteDebugCompile" visibility="private"/>
+    <conf name="testLiteDebugCompileOnly" visibility="private" extends="testLiteDebugProvided"/>
+    <conf name="testLiteDebugImplementation" visibility="private" extends="testLiteDebugApi"/>
+    <conf name="testLiteDebugProvided" visibility="private"/>
+    <conf name="testLiteDebugRuntimeOnly" visibility="private" extends="testLiteDebugApk"/>
+    <conf name="testLiteDebugWearApp" visibility="private"/>
+    <conf name="testLiteImplementation" visibility="private" extends="testLiteApi"/>
+    <conf name="testLiteProvided" visibility="private"/>
+    <conf name="testLiteReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="testLiteReleaseApi" visibility="private" extends="testLiteReleaseCompile"/>
+    <conf name="testLiteReleaseApk" visibility="private"/>
+    <conf name="testLiteReleaseCompile" visibility="private"/>
+    <conf name="testLiteReleaseCompileOnly" visibility="private" extends="testLiteReleaseProvided"/>
+    <conf name="testLiteReleaseImplementation" visibility="private" extends="testLiteReleaseApi"/>
+    <conf name="testLiteReleaseProvided" visibility="private"/>
+    <conf name="testLiteReleaseRuntimeOnly" visibility="private" extends="testLiteReleaseApk"/>
+    <conf name="testLiteReleaseWearApp" visibility="private"/>
+    <conf name="testLiteRuntimeOnly" visibility="private" extends="testLiteApk"/>
+    <conf name="testLiteWearApp" visibility="private"/>
+    <conf name="testProvided" visibility="private"/>
+    <conf name="testReleaseAnnotationProcessor" visibility="private"/>
+    <conf name="testReleaseApi" visibility="private" extends="testReleaseCompile"/>
+    <conf name="testReleaseApk" visibility="private"/>
+    <conf name="testReleaseCompile" visibility="private"/>
+    <conf name="testReleaseCompileOnly" visibility="private" extends="testReleaseProvided"/>
+    <conf name="testReleaseImplementation" visibility="private" extends="testReleaseApi"/>
+    <conf name="testReleaseProvided" visibility="private"/>
+    <conf name="testReleaseRuntimeOnly" visibility="private" extends="testReleaseApk"/>
+    <conf name="testReleaseWearApp" visibility="private"/>
+    <conf name="testRuntimeOnly" visibility="private" extends="testApk"/>
+    <conf name="testWearApp" visibility="private"/>
+    <conf name="wearApp" visibility="private"/>
+  </configurations>
+  <publications/>
+  <dependencies>
+    <dependency org="androidx.test.espresso" name="espresso-core" rev="3.1.0" conf="androidTestImplementation-&gt;default"/>
+    <dependency org="androidx.test.ext" name="junit" rev="1.1.1" conf="androidTestImplementation-&gt;default"/>
+    <dependency org="androidx.test" name="rules" rev="1.1.1" conf="androidTestImplementation-&gt;default"/>
+    <dependency org="com.puppycrawl.tools" name="checkstyle" rev="7.1.1" conf="checkstyle-&gt;default"/>
+    <dependency org="com.squareup.leakcanary" name="leakcanary-android" rev="1.6.3" conf="debugImplementation-&gt;default"/>
+    <dependency org="androidx.appcompat" name="appcompat" rev="1.0.0" conf="implementation-&gt;default"/>
+    <dependency org="androidx.constraintlayout" name="constraintlayout" rev="1.1.3" conf="implementation-&gt;default"/>
+    <dependency org="com.google.android.gms" name="play-services-location" rev="16.0.0" conf="implementation-&gt;default"/>
+    <dependency org="androidx.work" name="work-runtime" rev="2.2.0" conf="implementation-&gt;default"/>
+    <dependency org="com.mapbox.mapboxsdk" name="libcore" rev="1.4.2-SNAPSHOT" conf="implementation-&gt;default"/>
+    <dependency org="com.mapbox.mapboxsdk" name="libtelemetry" rev="4.7.3-SNAPSHOT" conf="implementation-&gt;default"/>
+    <dependency org="com.android.tools.lint" name="lint-gradle" rev="26.5.3" conf="lintClassPath-&gt;default"/>
+    <dependency org="com.squareup.leakcanary" name="leakcanary-android-no-op" rev="1.6.3" conf="releaseImplementation-&gt;default"/>
+    <dependency org="junit" name="junit" rev="4.12" conf="testImplementation-&gt;default"/>
+    <dependency org="org.mockito" name="mockito-core" rev="2.11.0" conf="testImplementation-&gt;default"/>
+    <exclude org="ant" module="ant" conf="checkstyle"/>
+    <exclude org="org.apache.ant" module="ant" conf="checkstyle"/>
+    <exclude org="org.apache.ant" module="ant-launcher" conf="checkstyle"/>
+    <exclude org="org.slf4j" module="slf4j-api" conf="checkstyle"/>
+    <exclude org="org.slf4j" module="jcl-over-slf4j" conf="checkstyle"/>
+    <exclude org="org.slf4j" module="log4j-over-slf4j" conf="checkstyle"/>
+    <exclude org="commons-logging" module="commons-logging" conf="checkstyle"/>
+    <exclude org="log4j" module="log4j" conf="checkstyle"/>
+  </dependencies>
+</ivy-module>

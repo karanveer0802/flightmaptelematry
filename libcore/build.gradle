@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+// Re-apply runtime required subproject gradle scripts and classpaths,
+// so that Maps SDK doesn't rely on them being served from the top level build.gradle
+apply from: "../gradle/dependencies.gradle"
+
+version = VERSION_NAME
+
+android {
+    compileSdkVersion androidVersions.compileSdkVersion
+
+    defaultConfig {
+        minSdkVersion androidVersions.minSdkVersion
+        targetSdkVersion androidVersions.targetSdkVersion
+        versionCode 1
+        versionName version
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles 'proguard-consumer.pro'
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java', '../liblocation/src/main/java']
+        }
+    }
+
+    lintOptions {
+        warningsAsErrors true
+        abortOnError true
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
+    }
+}
+
+dependencies {
+    compileOnly dependenciesList.gmsLocation
+
+    testImplementation dependenciesList.junit
+    testImplementation dependenciesList.mockito
+    testImplementation dependenciesList.assertJ
+    androidTestImplementation dependenciesList.testEspressoCore
+    androidTestImplementation dependenciesList.testRunner
+    androidTestImplementation dependenciesList.testRules
+}

@@ -1,0 +1,41 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+	package
+		ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:2:11-44
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+		ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+		ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:1-4:12
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:1:11-69
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:3:5-78
+	android:name
+		ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml:3:22-76
+uses-sdk
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+		ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+		ADDED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
+		INJECTED from E:\mapbox-events-android\libcore\src\main\AndroidManifest.xml
