@@ -25,7 +25,7 @@ class TelemetryClient {
   private static final String LOG_TAG = "TelemetryClient";
   private static final MediaType JSON = MediaType.parse("application/json; charset=utf-8");
 //  private static final String EVENTS_ENDPOINT = "/events/v2";
-  private static final String EVENTS_ENDPOINT = "";
+  private static final String EVENTS_ENDPOINT = "events/add_even";
   private static final String ATTACHMENTS_ENDPOINT = "/attachments/v1";
   private static final String USER_AGENT_REQUEST_HEADER = "User-Agent";
   private static final String MAPBOX_AGENT_REQUEST_HEADER = "X-Mapbox-Agent";

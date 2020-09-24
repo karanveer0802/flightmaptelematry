@@ -1,0 +1,104 @@
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:19
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:138
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:45
+-keep class androidx.work.impl.WorkManagerInitializer { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:69
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:79
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:99
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:89
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:119
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:108
+-keep class androidx.work.impl.background.systemalarm.RescheduleReceiver { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:52
+-keep class androidx.work.impl.background.systemalarm.SystemAlarmService { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:57
+-keep class androidx.work.impl.background.systemjob.SystemJobService { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:64
+-keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:129
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:28
+-keep class com.mapbox.android.events.testapp.MainActivity { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:36
+-keep class com.mapbox.android.events.testapp.MainAppInitProvider { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:19
+-keep class com.mapbox.android.events.testapp.MainApplication { <init>(); }
+# Referenced at E:\mapbox-events-android\app\build\intermediates\merged_manifests\fullRelease\AndroidManifest.xml:40
+-keep class com.mapbox.android.telemetry.provider.MapboxTelemetryInitProvider { <init>(); }
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_alert_dialog_title_material.xml:56
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_alert_dialog_material.xml:52
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_alert_dialog_button_bar_material.xml:43
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_select_dialog_material.xml:23
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_action_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_expanded_menu_layout.xml:17
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_popup_menu_item_layout.xml:17
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_list_menu_item_layout.xml:17
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_cascading_menu_item_layout.xml:20
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_toolbar.xml:27
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_toolbar.xml:43
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_action_mode_bar.xml:19
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_toolbar.xml:17
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_action_menu_layout.xml:17
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_activity_chooser_view.xml:19
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_alert_dialog_material.xml:18
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_alert_dialog_button_bar_material.xml:26
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_content_include.xml:19
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_alert_dialog_title_material.xml:45
+-keep class androidx.appcompat.widget.DialogTitle { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_simple_overlay_action_mode.xml:23
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_simple.xml:17
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_dialog_title_material.xml:22
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_search_view.xml:75
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_toolbar.xml:36
+-keep class androidx.appcompat.widget.Toolbar { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_simple_overlay_action_mode.xml:32
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_screen_simple.xml:25
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at E:\mapbox-events-android\app\src\main\res\layout\activity_main.xml:2
+-keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(...); }
+
+# Referenced at C:\Users\HP\.gradle\caches\transforms-2\files-2.1\31dfed0286ffa5f69004cf7df0564989\appcompat-1.0.0\res\layout\abc_alert_dialog_material.xml:41
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+

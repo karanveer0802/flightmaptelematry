@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.mapbox.mapboxsdk" module="libtelemetry" revision="4.7.3-SNAPSHOT" status="integration" publication="20200925002358"/>
+  <info organisation="com.mapbox.mapboxsdk" module="libtelemetry" revision="4.7.3-SNAPSHOT" status="integration" publication="20200925010209"/>
   <configurations>
     <conf name="androidApis" visibility="public"/>
     <conf name="androidJacocoAnt" visibility="private"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.mapbox.mapboxsdk" module="app" revision="unspecified" status="integration" publication="20200925002356"/>
+  <info organisation="com.mapbox.mapboxsdk" module="app" revision="unspecified" status="integration" publication="20200925010208"/>
   <configurations>
     <conf name="androidApis" visibility="public"/>
     <conf name="androidTestAnnotationProcessor" visibility="private"/>
