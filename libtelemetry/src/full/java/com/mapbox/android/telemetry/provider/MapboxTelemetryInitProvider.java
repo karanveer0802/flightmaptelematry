@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 
 import android.util.Log;
 import com.mapbox.android.core.crashreporter.MapboxUncaughtExceptionHanlder;
-import com.mapbox.android.telemetry.BuildConfig;
+//import com.mapbox.android.telemetry.BuildConfig;
 import com.mapbox.android.telemetry.location.LocationCollectionClient;
 
 import java.util.concurrent.TimeUnit;
@@ -29,7 +29,7 @@ public class MapboxTelemetryInitProvider extends ContentProvider {
     try {
       if (!BuildConfig.DEBUG) {
         // Install crash reporter for telemetry packages only!
-        MapboxUncaughtExceptionHanlder.install(getContext(), MAPBOX_TELEMETRY_PACKAGE, BuildConfig.VERSION_NAME);
+        MapboxUncaughtExceptionHanlder.install(getContext(), MAPBOX_TELEMETRY_PACKAGE, "1.4.2-SNAPSHOT");
       }
       LocationCollectionClient.install(getContext(), TimeUnit.HOURS.toMillis(DEFAULT_SESSION_ROTATION_INTERVAL_HOURS));
     } catch (Throwable throwable) {

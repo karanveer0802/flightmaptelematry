@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.mapbox.mapboxsdk" module="libtelemetry" revision="4.7.3-SNAPSHOT" status="integration" publication="20200925010209"/>
+  <info organisation="com.mapbox.mapboxsdk" module="libtelemetry" revision="4.7.3-SNAPSHOT" status="integration" publication="20200925012010"/>
   <configurations>
     <conf name="androidApis" visibility="public"/>
     <conf name="androidJacocoAnt" visibility="private"/>
@@ -287,6 +287,33 @@
     <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.9" conf="fullDebugAndroidTestRuntimeClasspath-&gt;default">
       <artifact name="org.jacoco.agent" type="jar" ext="jar" m:classifier="runtime" conf="fullDebugAndroidTestRuntimeClasspath"/>
     </dependency>
+    <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.9" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.legacy" name="legacy-support-core-utils" rev="1.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.annotation" name="annotation" rev="1.1.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.core" name="core" rev="1.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.collection" name="collection" rev="1.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-runtime" rev="2.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-common" rev="2.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.arch.core" name="core-common" rev="2.0.1" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.versionedparcelable" name="versionedparcelable" rev="1.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.documentfile" name="documentfile" rev="1.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.loader" name="loader" rev="1.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-livedata" rev="2.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.arch.core" name="core-runtime" rev="2.0.1" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-livedata-core" rev="2.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-viewmodel" rev="2.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.localbroadcastmanager" name="localbroadcastmanager" rev="1.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.print" name="print" rev="1.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="com.squareup.okhttp3" name="okhttp" rev="3.12.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="com.squareup.okio" name="okio" rev="1.15.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="com.google.code.gson" name="gson" rev="2.8.5" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.work" name="work-runtime" rev="2.2.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="com.google.guava" name="listenablefuture" rev="1.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.room" name="room-runtime" rev="2.1.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.room" name="room-common" rev="2.1.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.sqlite" name="sqlite-framework" rev="2.0.1" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.sqlite" name="sqlite" rev="2.0.1" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-service" rev="2.0.0" transitive="false" conf="fullDebugCompileClasspath-&gt;default"/>
     <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.9" conf="fullDebugRuntimeClasspath-&gt;default">
       <artifact name="org.jacoco.agent" type="jar" ext="jar" m:classifier="runtime" conf="fullDebugRuntimeClasspath"/>
     </dependency>
@@ -294,6 +321,32 @@
       <artifact name="org.jacoco.agent" type="jar" ext="jar" m:classifier="runtime" conf="fullDebugUnitTestRuntimeClasspath"/>
     </dependency>
     <dependency org="androidx.legacy" name="legacy-support-core-utils" rev="1.0.0" conf="fullImplementation-&gt;default"/>
+    <dependency org="androidx.legacy" name="legacy-support-core-utils" rev="1.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.annotation" name="annotation" rev="1.1.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.core" name="core" rev="1.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.collection" name="collection" rev="1.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-runtime" rev="2.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-common" rev="2.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.arch.core" name="core-common" rev="2.0.1" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.versionedparcelable" name="versionedparcelable" rev="1.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.documentfile" name="documentfile" rev="1.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.loader" name="loader" rev="1.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-livedata" rev="2.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.arch.core" name="core-runtime" rev="2.0.1" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-livedata-core" rev="2.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-viewmodel" rev="2.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.localbroadcastmanager" name="localbroadcastmanager" rev="1.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.print" name="print" rev="1.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="com.squareup.okhttp3" name="okhttp" rev="3.12.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="com.squareup.okio" name="okio" rev="1.15.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="com.google.code.gson" name="gson" rev="2.8.5" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.work" name="work-runtime" rev="2.2.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="com.google.guava" name="listenablefuture" rev="1.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.room" name="room-runtime" rev="2.1.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.room" name="room-common" rev="2.1.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.sqlite" name="sqlite-framework" rev="2.0.1" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.sqlite" name="sqlite" rev="2.0.1" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-service" rev="2.0.0" transitive="false" conf="fullReleaseCompileClasspath-&gt;default"/>
     <dependency org="com.squareup.okhttp3" name="okhttp" rev="3.12.0" conf="implementation-&gt;default"/>
     <dependency org="com.google.code.gson" name="gson" rev="2.8.5" conf="implementation-&gt;default"/>
     <dependency org="androidx.annotation" name="annotation" rev="1.0.0" conf="implementation-&gt;default"/>
@@ -305,12 +358,53 @@
     <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.9" conf="liteDebugAndroidTestRuntimeClasspath-&gt;default">
       <artifact name="org.jacoco.agent" type="jar" ext="jar" m:classifier="runtime" conf="liteDebugAndroidTestRuntimeClasspath"/>
     </dependency>
+    <dependency org="com.squareup.okhttp3" name="okhttp" rev="3.12.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="com.squareup.okio" name="okio" rev="1.15.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="com.google.code.gson" name="gson" rev="2.8.5" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.annotation" name="annotation" rev="1.1.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.work" name="work-runtime" rev="2.2.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="com.google.guava" name="listenablefuture" rev="1.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-livedata" rev="2.0.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.arch.core" name="core-runtime" rev="2.0.1" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.arch.core" name="core-common" rev="2.0.1" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-livedata-core" rev="2.0.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-common" rev="2.0.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.room" name="room-runtime" rev="2.1.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.room" name="room-common" rev="2.1.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.sqlite" name="sqlite-framework" rev="2.0.1" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.sqlite" name="sqlite" rev="2.0.1" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.core" name="core" rev="1.0.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.collection" name="collection" rev="1.0.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-runtime" rev="2.0.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.versionedparcelable" name="versionedparcelable" rev="1.0.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-service" rev="2.0.0" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
+    <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.9" transitive="false" conf="liteDebugCompileClasspath-&gt;default"/>
     <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.9" conf="liteDebugRuntimeClasspath-&gt;default">
       <artifact name="org.jacoco.agent" type="jar" ext="jar" m:classifier="runtime" conf="liteDebugRuntimeClasspath"/>
     </dependency>
     <dependency org="org.jacoco" name="org.jacoco.agent" rev="0.7.9" conf="liteDebugUnitTestRuntimeClasspath-&gt;default">
       <artifact name="org.jacoco.agent" type="jar" ext="jar" m:classifier="runtime" conf="liteDebugUnitTestRuntimeClasspath"/>
     </dependency>
+    <dependency org="com.squareup.okhttp3" name="okhttp" rev="3.12.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="com.squareup.okio" name="okio" rev="1.15.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="com.google.code.gson" name="gson" rev="2.8.5" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.annotation" name="annotation" rev="1.1.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.work" name="work-runtime" rev="2.2.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="com.google.guava" name="listenablefuture" rev="1.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-livedata" rev="2.0.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.arch.core" name="core-runtime" rev="2.0.1" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.arch.core" name="core-common" rev="2.0.1" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-livedata-core" rev="2.0.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-common" rev="2.0.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.room" name="room-runtime" rev="2.1.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.room" name="room-common" rev="2.1.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.sqlite" name="sqlite-framework" rev="2.0.1" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.sqlite" name="sqlite" rev="2.0.1" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.core" name="core" rev="1.0.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.collection" name="collection" rev="1.0.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-runtime" rev="2.0.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.versionedparcelable" name="versionedparcelable" rev="1.0.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
+    <dependency org="androidx.lifecycle" name="lifecycle-service" rev="2.0.0" transitive="false" conf="liteReleaseCompileClasspath-&gt;default"/>
     <dependency org="junit" name="junit" rev="4.12" conf="testImplementation-&gt;default"/>
     <dependency org="org.mockito" name="mockito-core" rev="2.11.0" conf="testImplementation-&gt;default"/>
     <dependency org="com.squareup.okhttp3" name="mockwebserver" rev="3.12.0" conf="testImplementation-&gt;default"/>
