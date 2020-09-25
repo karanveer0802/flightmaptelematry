@@ -62,7 +62,7 @@ def isTelem() {
 }
 
 afterEvaluate { project ->
-    uploadArchives {
+    uploadArchives {  
         repositories {
             mavenDeployer {
                 beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }

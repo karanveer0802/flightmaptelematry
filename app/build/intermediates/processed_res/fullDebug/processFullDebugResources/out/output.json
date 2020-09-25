@@ -1,0 +1,1 @@
+[{"outputType":{"type":"PROCESSED_RES"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0","enabled":true,"outputFile":"app-full-debug.apk","fullName":"fullDebug","baseName":"full-debug"},"path":"resources-fullDebug.ap_","properties":{"packageId":"com.mapbox.android.events.testapp","split":"","minSdkVersion":"14"}}]

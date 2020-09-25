@@ -1,0 +1,1 @@
+[{"outputType":{"type":"AAPT_FRIENDLY_MERGED_MANIFESTS"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"4.7.3-SNAPSHOT","enabled":true,"outputFile":"libtelemetry-full-debug.aar","fullName":"fullDebug","baseName":"full-debug"},"path":"AndroidManifest.xml","properties":{"packageId":"com.mapbox.android.telemetry","split":""}}]

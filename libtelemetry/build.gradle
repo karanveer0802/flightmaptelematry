@@ -67,3 +67,4 @@ dependencies {
     androidTestImplementation dependenciesList.testRules
     androidTestImplementation dependenciesList.workManagerTesting
 }
+//apply from: "${rootDir}/gradle/bintray-publish.gradle"
